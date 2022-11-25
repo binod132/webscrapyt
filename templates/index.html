@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Election</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+  </style>
+  
+</head>
+<body>
+    <div class="login">
+        <h1>YouTube Analysis of News Channels By Binod Adhikari.</h1>
+        <form action="{{url_for('load')}} "method="POST">
+            <input type="text" name="Country" placeholder="Country" , required="required"/><br>
+
+
+            <button type="submit"n class="btn btn-primary btn-block btn-large">Refresh</button>
+        </form>
+
+<br>
+<br>
+</div>
+<p>{{ name }}</p>
+
+<img src={{ url1}} alt="Chart" height="600" width="600" class="center" style="width:50%;">
+<img src={{ url2}} alt="Chart" height="600" width="600" class="center" style="width:50%;">
+<img src={{ url3}} alt="Chart" height="600" width="600" class="center" style="width:50%;">
+</body>
+</html>

@@ -30,15 +30,15 @@ def load():
 
     ax = sns.barplot(x='channel_name', y='subscriber', data = channels_data)
     fig = ax.get_figure()
-    fig.savefig('/Users/shantiadhikari/Desktop/MLops_demo/webscrapyt/static/images/sub.png')
+    fig.savefig('./static/images/sub.png')
     
     ax1 = sns.barplot(x='channel_name', y='views', data = channels_data)
     fig1 = ax1.get_figure()
-    fig1.savefig('/Users/shantiadhikari/Desktop/MLops_demo/webscrapyt/static/images/view.png')
+    fig1.savefig('./static/images/view.png')
     
     ax2 = sns.barplot(x='channel_name', y='total_videos', data = channels_data)
     fig2 = ax2.get_figure()
-    fig2.savefig('/Users/shantiadhikari/Desktop/MLops_demo/webscrapyt/static/images/videos.png')
+    fig2.savefig('./static/images/videos.png')
 
 
     return render_template('index.html', name = 'Channel Compare', url1 ='/static/images/sub.png', 
